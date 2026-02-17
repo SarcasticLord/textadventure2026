@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
   m_Name: toExitEast
   m_EditorClassIdentifier: 
+  direction: 2
+  description: that door looks like it could be the way out to the east. all the
+    doors look the same i dont know.
+  room: {fileID: 11400000, guid: 4c28f310f04bf5c4b8d10d023212a12f, type: 2}

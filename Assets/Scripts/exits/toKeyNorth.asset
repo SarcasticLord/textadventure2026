@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
   m_Name: toKeyNorth
   m_EditorClassIdentifier: 
+  direction: 0
+  description: 'theres something shiny under that door to the north '
+  room: {fileID: 11400000, guid: 2583d7558e0c8b84aa3dcbf59d75c598, type: 2}

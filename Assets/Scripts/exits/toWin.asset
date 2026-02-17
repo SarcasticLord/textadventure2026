@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
-  m_Name: toStartSouth
+  m_Name: toWin
   m_EditorClassIdentifier: 
-  direction: 0
-  description: oh my god this door to the south look familier  is this the door to
-    the start again
-  room: {fileID: 11400000, guid: c45991d744e799b48a394957398bbf67, type: 2}
+  direction: 2
+  description: this door to the easy is this the way out oh my god i hope so
+  room: {fileID: 11400000, guid: 9498a018f38d2e04cb05e3e44e9d7507, type: 2}

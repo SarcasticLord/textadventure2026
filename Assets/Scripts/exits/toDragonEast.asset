@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
   m_Name: toDragonEast
   m_EditorClassIdentifier: 
+  direction: 2
+  description: huh theres a door to the east. i think i hear something behind that
+    door
+  room: {fileID: 11400000, guid: 4db543c76798f584fb2d27fc3abaa7e7, type: 2}

@@ -39,7 +39,6 @@ public class InputManager : MonoBehaviour
     void GetInput(string input)
     {
 
-        UpdateStory(input);
         userInput.text = "";
         userInput.ActivateInputField();
 
@@ -54,6 +53,14 @@ public class InputManager : MonoBehaviour
                 if (commands.Contains(parts[0]))
                 {
                     UpdateStory(input);
+                    if (parts[0] == "go")
+                    {
+                        if (NavigationManager.instance.SwitchRooms(parts[1]))
+                            Debug.Log("direction exists");
+                        else
+                            Debug.Log("direction doesent exist");
+                    }
+                    
                 }
                 else
                 {
