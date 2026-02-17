@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb4ac6f7084b3eb418bf60f9fa429b81, type: 3}
+  m_Script: {fileID: 11500000, guid: f40a150e57a6fd44f8b5fd96d0f8ad01, type: 3}
   m_Name: orb
   m_EditorClassIdentifier: 
   roomName: orb
-  description: There is a blue orb in here.
-  exits:
-  - {fileID: 11400000, guid: d1fa62c9de2baa3458bb68555faa781c, type: 2}
-  - {fileID: 11400000, guid: ac9ff88776384374389a37d69fb942db, type: 2}
-  hasKey: 0
-  hasOrb: 1
+  Description: wow what the heck is that orb thing
+  exits: []
