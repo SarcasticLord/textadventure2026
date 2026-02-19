@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: toDragonEast
   m_EditorClassIdentifier: 
   direction: 2
-  description: huh theres a door to the east. i think i hear something behind that
-    door
+  description: 'huh theres a door to the east. i think i hear something behind that
+    door.
+
+'
   room: {fileID: 11400000, guid: 4db543c76798f584fb2d27fc3abaa7e7, type: 2}

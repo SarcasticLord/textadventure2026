@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: smokey
   m_EditorClassIdentifier: 
   roomName: smokey
-  Description: i cant see its so smokey in here i wonder why
+  Description: i cant see. its so smokey in here, i wonder why.
   exits:
   - {fileID: 11400000, guid: 7c8d0d7178a0583479d420f956b0269d, type: 2}
   - {fileID: 11400000, guid: 26ff25beaa36096418bc84413a186c48, type: 2}
   - {fileID: 11400000, guid: a9111387728769142a3559e90fba9cd9, type: 2}
+  items: []

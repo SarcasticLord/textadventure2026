@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
   m_Name: toStartSouth
   m_EditorClassIdentifier: 
-  direction: 0
+  direction: 1
   description: oh my god this door to the south look familier  is this the door to
-    the start again
+    the start again.
   room: {fileID: 11400000, guid: c45991d744e799b48a394957398bbf67, type: 2}
+  isLocked: 0
+  isHidden: 0

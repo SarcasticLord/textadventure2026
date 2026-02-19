@@ -58,8 +58,15 @@ public class InputManager : MonoBehaviour
                         if (NavigationManager.instance.SwitchRooms(parts[1]))
                             Debug.Log("direction exists");
                         else
-                            Debug.Log("direction doesent exist");
+                            UpdateStory("direction doesent exist or is locked");
                     }
+                    else if (parts[0] == "get")
+                    {
+                        if (NavigationManager.instance.getItem(parts[1]))
+                            GameManager.instance.inventory.Add(parts[1]);
+                    }
+                    else
+                        UpdateStory("sorry thats not in this room");
                     
                 }
                 else

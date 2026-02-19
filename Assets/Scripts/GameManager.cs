@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public List<string> inventory = new List<string>();
 
     private void Awake()
     {
@@ -18,6 +19,11 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        NavigationManager.instance.onRestart += ResetGame; // notice no () its not calling it its pointing to it
+    }
+
+    void ResetGame()
+    {
+        inventory.Clear();
     }
 }

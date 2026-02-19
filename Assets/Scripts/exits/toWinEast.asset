@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
   m_Name: toWinEast
   m_EditorClassIdentifier: 
+  direction: 2
+  description: 
+  room: {fileID: 11400000, guid: 9498a018f38d2e04cb05e3e44e9d7507, type: 2}
+  isLocked: 1
+  isHidden: 0

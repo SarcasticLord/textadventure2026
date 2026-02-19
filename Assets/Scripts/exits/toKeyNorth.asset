@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: toKeyNorth
   m_EditorClassIdentifier: 
   direction: 0
-  description: 'theres something shiny under that door to the north '
+  description: 'theres something shiny under that door to the north.
+
+'
   room: {fileID: 11400000, guid: 2583d7558e0c8b84aa3dcbf59d75c598, type: 2}
+  isLocked: 0
+  isHidden: 1

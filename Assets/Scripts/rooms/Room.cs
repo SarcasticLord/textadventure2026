@@ -7,4 +7,8 @@ public class Room : ScriptableObject
     [TextArea]
     public string Description;
     public Exit[] exits;
+
+    //public bool hasKey;
+    //public bool hasOrb;
+    public string[] items;
 }

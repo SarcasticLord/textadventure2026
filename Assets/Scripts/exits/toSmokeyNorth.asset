@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: toSmokeyNorth
   m_EditorClassIdentifier: 
   direction: 0
-  description: theres a bit of smoke coming out from under that door to the north
+  description: theres a bit of smoke coming out from under that door to the north.
   room: {fileID: 11400000, guid: 64b367cc3fded8540b7c8b208b7cb419, type: 2}
