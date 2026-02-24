@@ -1,4 +1,6 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NavigationManager : MonoBehaviour
@@ -11,6 +13,8 @@ public class NavigationManager : MonoBehaviour
 
     public delegate void Restart();
     public event Restart onRestart;
+
+
    
 
     private Dictionary<string, Room> exitRooms = new Dictionary<string, Room>();
@@ -50,11 +54,17 @@ public class NavigationManager : MonoBehaviour
 
         if (currentRoom.name == "dragon")
         {
-            onRestart.Invoke();             // calling the restsrt event
-            currentRoom = startingRoom;     // puts the player back at the start
-            Unpack();
+            GameRestart();
         }
 
+    }
+
+    public void GameRestart()
+    {
+        onRestart.Invoke();             // calling the restsrt event
+        currentRoom = startingRoom;     // puts the player back at the start
+        toKeyNorth.isHidden = true;
+        Unpack();
     }
 
     public bool SwitchRooms(string direction)
@@ -106,7 +116,13 @@ public class NavigationManager : MonoBehaviour
             }
             
         }
+        if (isFound)
+        {
+            currentRoom.items.Remove(item);
+            currentRoom.Description = "this room use to ahve something but guess its gone";
+        }
         return isFound;
-    }
 
+    }
+    
 }

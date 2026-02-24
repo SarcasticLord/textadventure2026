@@ -12,7 +12,9 @@ public class InputManager : MonoBehaviour
     public TMP_Text storyText; // the story 
     public TMP_InputField userInput; // the input field object
     public TMP_Text inputText; // part of the input field where user enters response
-    public TMP_Text placeHolderText; // part of the input field for initial placeholder text
+    public TMP_Text placeHolderText; // part of the input field for initial placeholder text'
+
+    public ScrollRect scrollRect; // controls how our story scrolls
     
     private string story; // holds the story to display
     private List<string> commands = new List<string>();
@@ -31,9 +33,18 @@ public class InputManager : MonoBehaviour
     {
         commands.Add("go");
         commands.Add("get");
+        commands.Add("restart");
 
         story = storyText.text;
         userInput.onEndEdit.AddListener(GetInput);
+
+
+    }
+
+    IEnumerator ScrollToBottom()
+    {
+        yield return new WaitForEndOfFrame();
+        scrollRect.verticalNormalizedPosition = 0f;
     }
 
     void GetInput(string input)
@@ -71,7 +82,7 @@ public class InputManager : MonoBehaviour
                 }
                 else
                 {
-                    UpdateStory("command not valid");
+                    UpdateStory("Rut roh... that didnt work. try that again.");
                 }
             }
         }
@@ -85,5 +96,6 @@ public class InputManager : MonoBehaviour
     {
         story += "\n" + msg;
         storyText.text = story;
+        StartCoroutine("ScrollToBottom");
     }
 }
