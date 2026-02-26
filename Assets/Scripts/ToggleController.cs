@@ -17,7 +17,7 @@ public class ToggleController : MonoBehaviour
     void Start()
     {
         //PlayerPrefs.HasKey("darkmode");
-        bool darkmode = PlayerPrefs.GetInt("darkmode", 1) == 1? true : false; // 1 is the default = darkmode is true
+        darkmode = PlayerPrefs.GetInt("darkmode", 1) == 1? true : false; // 1 is the default = darkmode is true
         toggle = GetComponent<Toggle>();
         SetTheme();
         toggle.onValueChanged.AddListener(UpdateTheme);
@@ -27,7 +27,7 @@ public class ToggleController : MonoBehaviour
     void UpdateTheme(bool isChecked)
     {
         darkmode = isChecked;
-        PlayerPrefs.SetInt("darkmde", darkmode ? 1 : 0);
+        PlayerPrefs.SetInt("darkmode", darkmode ? 1 : 0);
         PlayerPrefs.Save();
         SetTheme();
     }
@@ -48,7 +48,7 @@ public class ToggleController : MonoBehaviour
             toggle.isOn = false; // uncheck the box
             background.color = Color.white;
             storyText.color = Color.black;
-            inputText.color = Color.black;
+            inputText.color = Color.white;
             placeHolderText.color = Color.black;
             toggleText.color = Color.black;
         }

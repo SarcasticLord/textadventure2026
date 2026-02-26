@@ -14,12 +14,13 @@ public class NavigationManager : MonoBehaviour
     public delegate void Restart();
     public event Restart onRestart;
 
+    public Exit toKeyNorth;
+    public List<Room> rooms;
 
-   
 
     private Dictionary<string, Room> exitRooms = new Dictionary<string, Room>();
 
-    public Exit toKeyNorth;
+    
 
     private void Awake()
     {
@@ -33,7 +34,7 @@ public class NavigationManager : MonoBehaviour
     void Start()
     {
         currentRoom = startingRoom;
-        Unpack();
+        //Unpack();
     }
 
     void Unpack()
@@ -66,7 +67,11 @@ public class NavigationManager : MonoBehaviour
         toKeyNorth.isHidden = true;
         Unpack();
     }
-
+    public void SwitchRooms(Room room)
+    {
+        currentRoom = room;
+        Unpack();
+    }
     public bool SwitchRooms(string direction)
     {
         if (exitRooms.ContainsKey(direction))
@@ -123,6 +128,13 @@ public class NavigationManager : MonoBehaviour
         }
         return isFound;
 
+    }
+    public Room GetRoomByName(string name)
+    {
+        foreach(Room aroom in rooms)
+            if (aroom.name == name)
+                return aroom;
+        return null;
     }
     
 }

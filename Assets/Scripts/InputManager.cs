@@ -34,6 +34,7 @@ public class InputManager : MonoBehaviour
         commands.Add("go");
         commands.Add("get");
         commands.Add("restart");
+        commands.Add("save");
 
         story = storyText.text;
         userInput.onEndEdit.AddListener(GetInput);
@@ -76,6 +77,11 @@ public class InputManager : MonoBehaviour
                         if (NavigationManager.instance.getItem(parts[1]))
                             GameManager.instance.inventory.Add(parts[1]);
                     }
+                    else if (parts[0] == "save")
+                        GameManager.instance.Save();
+
+                    else if (parts[0] == "restart")
+                        NavigationManager.instance.GameRestart();
                     else
                         UpdateStory("sorry thats not in this room");
                     
