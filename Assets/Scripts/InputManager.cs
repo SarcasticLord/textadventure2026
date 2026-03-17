@@ -36,6 +36,7 @@ public class InputManager : MonoBehaviour
         commands.Add("restart");
         commands.Add("save");
         commands.Add("inventory");
+        commands.Add("commands");
 
         story = storyText.text;
         userInput.onEndEdit.AddListener(GetInput);
@@ -100,13 +101,16 @@ public class InputManager : MonoBehaviour
                             UpdateStory(items);
                         }
                     }
+                    else if (parts[0] == "commands")
+                        UpdateStory("Commands: go, get, save, restart, inventory");
+
                     else
                         UpdateStory("sorry thats not in this room");
                     
                 }
                 else
                 {
-                    UpdateStory("Rut roh... that didnt work. try that again.");
+                    UpdateStory("Rut roh... that didn't work. try that again.");
                 }
             }
         }
