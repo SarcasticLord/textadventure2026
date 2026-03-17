@@ -83,6 +83,23 @@ public class InputManager : MonoBehaviour
 
                     else if (parts[0] == "restart")
                         NavigationManager.instance.GameRestart();
+
+                    else if (parts[0] == "inventory")
+                    {
+                        if(GameManager.instance.inventory.Count == 0)
+                        {
+                            UpdateStory("you dont have anything");
+                        }
+                        else
+                        {
+                            string items = "you have: ";
+                            foreach (string item in GameManager.instance.inventory)
+                            {
+                                items += item + " ";
+                            }
+                            UpdateStory(items);
+                        }
+                    }
                     else
                         UpdateStory("sorry thats not in this room");
                     

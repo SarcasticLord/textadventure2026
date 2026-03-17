@@ -34,7 +34,7 @@ public class NavigationManager : MonoBehaviour
     void Start()
     {
         currentRoom = startingRoom;
-        //Unpack();
+        Unpack();
     }
 
     void Unpack()
@@ -123,7 +123,7 @@ public class NavigationManager : MonoBehaviour
         if (isFound)
         {
             currentRoom.items.Remove(item);
-            currentRoom.Description = "this room use to ahve something but guess its gone";
+            currentRoom.Description = "this room use to have something but guess its gone";
         }
         return isFound;
 
