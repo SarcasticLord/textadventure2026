@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: win
   m_EditorClassIdentifier: 
   roomName: win
-  Description: YOU ESCAPED WOOOO YOU DID IT LETS GO YOU WON
+  Description: 'YOU ESCAPED WOOOO YOU DID IT LETS GO YOU WON.
+
+'
   exits: []
+  items: []

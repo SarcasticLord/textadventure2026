@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: toWinEast
   m_EditorClassIdentifier: 
   direction: 2
-  description: 
+  description: 'that door looks like it could be the way out.
+
+'
   room: {fileID: 11400000, guid: 9498a018f38d2e04cb05e3e44e9d7507, type: 2}
   isLocked: 1
   isHidden: 0

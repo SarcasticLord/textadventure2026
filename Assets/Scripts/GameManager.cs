@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         BinaryFormatter bf = new BinaryFormatter();
         FileStream aFile = File.Create(Application.persistentDataPath + "/player.save");
-        //Debug.Log(Application.persistentDataPath);
+        Debug.Log(Application.persistentDataPath);
         bf.Serialize(aFile, gameState);
         aFile.Close();
     }

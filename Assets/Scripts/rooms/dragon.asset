@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: dragon
   m_EditorClassIdentifier: 
   roomName: dragon
-  Description: WHAT THE HECK IS THAT AAADFJ sfklghEIPOHAODITH
+  Description: 'WHAT THE HECK IS THAT AAADFJ sfklghEIPOHAODITH
+
+    You died.
+
+'
   exits: []
+  items: []

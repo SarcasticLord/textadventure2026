@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: toExitWest
   m_EditorClassIdentifier: 
   direction: 3
-  description: looking to the west theres a door. am i finally free from this prison
+  description: 'looking to the west now, theres a door. am i finally free from this
+    prison.
+
+'
   room: {fileID: 11400000, guid: 4c28f310f04bf5c4b8d10d023212a12f, type: 2}
+  isLocked: 0
+  isHidden: 0

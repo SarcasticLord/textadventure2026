@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: toWin
   m_EditorClassIdentifier: 
   direction: 2
-  description: this door to the easy is this the way out oh my god i hope so
+  description: 'this door to the east is this the way out oh my god i hope so.
+
+'
   room: {fileID: 11400000, guid: 9498a018f38d2e04cb05e3e44e9d7507, type: 2}
+  isLocked: 0
+  isHidden: 0

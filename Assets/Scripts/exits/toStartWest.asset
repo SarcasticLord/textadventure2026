@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: toStartWest
   m_EditorClassIdentifier: 
   direction: 3
-  description: 
-  room: {fileID: 0}
+  description: 'the door to the west goes back to the start.
+
+'
+  room: {fileID: 11400000, guid: c45991d744e799b48a394957398bbf67, type: 2}
   isLocked: 0
   isHidden: 0

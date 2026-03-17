@@ -35,6 +35,7 @@ public class InputManager : MonoBehaviour
         commands.Add("get");
         commands.Add("restart");
         commands.Add("save");
+        commands.Add("inventory");
 
         story = storyText.text;
         userInput.onEndEdit.AddListener(GetInput);

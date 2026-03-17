@@ -87,8 +87,6 @@ public class NavigationManager : MonoBehaviour
                 return false;
 
 
-
-
         }
         return false;
 
@@ -117,6 +115,7 @@ public class NavigationManager : MonoBehaviour
                 if(item == "orb")
                 {
                     toKeyNorth.isHidden = false;
+                    InputManager.instance.UpdateStory("you picked up the orb!!!");
                 }
             }
             
