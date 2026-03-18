@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f40a150e57a6fd44f8b5fd96d0f8ad01, type: 3}
-  m_Name: key
+  m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
+  m_Name: toSmokeyEast
   m_EditorClassIdentifier: 
-  roomName: key
-  Description: 'ooo look theres a key in here.
-
-'
-  exits:
-  - {fileID: 11400000, guid: 38c75638c005c5140a7edd7fac396d5e, type: 2}
-  items: []
+  direction: 2
+  description: under the door is more smoke
+  room: {fileID: 11400000, guid: 64b367cc3fded8540b7c8b208b7cb419, type: 2}
+  isLocked: 0
+  isHidden: 0

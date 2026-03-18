@@ -15,5 +15,4 @@ public class Room : ScriptableObject
   
 
     public List <string> items;
-
 }

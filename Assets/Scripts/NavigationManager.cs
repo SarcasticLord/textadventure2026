@@ -18,6 +18,7 @@ public class NavigationManager : MonoBehaviour
     public List<Room> rooms;
 
 
+
     private Dictionary<string, Room> exitRooms = new Dictionary<string, Room>();
 
     
@@ -65,6 +66,10 @@ public class NavigationManager : MonoBehaviour
         onRestart.Invoke();             // calling the restsrt event
         currentRoom = startingRoom;     // puts the player back at the start
         toKeyNorth.isHidden = true;
+       
+        bool isFound = false;
+        
+
         Unpack();
     }
     public void SwitchRooms(Room room)
@@ -91,7 +96,6 @@ public class NavigationManager : MonoBehaviour
         return false;
 
     }
-
     Exit getExit(string direction)
     {
         foreach (Exit e in currentRoom.exits)
@@ -114,6 +118,7 @@ public class NavigationManager : MonoBehaviour
                 isFound = true;
                 if(item == "orb")
                 {
+                    
                     toKeyNorth.isHidden = false;
                     InputManager.instance.UpdateStory("you picked up the orb!!!");
                 }
@@ -123,7 +128,7 @@ public class NavigationManager : MonoBehaviour
         if (isFound)
         {
             currentRoom.items.Remove(item);
-            currentRoom.Description = "this room use to have something but guess its gone";
+            currentRoom.Description = "this room use to have something but guess its gone.";
         }
         return isFound;
 

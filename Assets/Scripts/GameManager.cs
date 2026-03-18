@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     {
         Load();
         NavigationManager.instance.onRestart += ResetGame; // notice no () its not calling it its pointing to it
-        Save();
+        //Save();
         
 
     }
