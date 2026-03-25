@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: toGooseWest
   m_EditorClassIdentifier: 
   direction: 3
-  description: there is a lot of noise coming from that door to the west
+  description: 'there is a lot of noise coming from that door to the west
+
+'
   room: {fileID: 11400000, guid: 33d3faf18ad63474c89a30b4f20c5728, type: 2}
   isLocked: 0
   isHidden: 0

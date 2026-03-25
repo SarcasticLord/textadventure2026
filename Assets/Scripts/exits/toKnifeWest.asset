@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
-  m_Name: toSmokeyEast
+  m_Name: toKnifeWest
   m_EditorClassIdentifier: 
-  direction: 2
-  description: 'under the door is more smoke
+  direction: 3
+  description: 'i heard something small and metal hit the ground behind the door
+    to the west
 
 '
-  room: {fileID: 11400000, guid: 64b367cc3fded8540b7c8b208b7cb419, type: 2}
+  room: {fileID: 11400000, guid: f2e2c26793e9f5c469ff833f557dd310, type: 2}
   isLocked: 0
   isHidden: 0

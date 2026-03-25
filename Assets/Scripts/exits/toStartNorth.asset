@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f40a150e57a6fd44f8b5fd96d0f8ad01, type: 3}
-  m_Name: win
+  m_Script: {fileID: 11500000, guid: a25ba897e87368e4396bab2ad4c5faba, type: 3}
+  m_Name: toStartNorth
   m_EditorClassIdentifier: 
-  roomName: win
-  Description: ' YOU ESCAPED WOOOO YOU DID IT LETS GO YOU WON.
+  direction: 0
+  description: 'the door to the north goes back to the start
 
 '
-  exits: []
-  items: []
+  room: {fileID: 11400000, guid: c45991d744e799b48a394957398bbf67, type: 2}
+  isLocked: 0
+  isHidden: 0

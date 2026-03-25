@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: exit
   m_EditorClassIdentifier: 
   roomName: exit
-  Description: 'i think im getting closer to the exit.
+  Description: ' i think im getting closer to the exit.
 
 '
   exits:

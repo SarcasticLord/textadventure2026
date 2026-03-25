@@ -84,7 +84,7 @@ public class NavigationManager : MonoBehaviour
             if (GameManager.instance.inventory.Contains("key") || !getExit(direction).isLocked)
             {
                 currentRoom = exitRooms[direction];
-                InputManager.instance.UpdateStory("you go " + direction);
+                InputManager.instance.UpdateStory(" you go " + direction);
                 Unpack();
                 return true;
             }
@@ -121,6 +121,18 @@ public class NavigationManager : MonoBehaviour
                     
                     toKeyNorth.isHidden = false;
                     InputManager.instance.UpdateStory("you picked up the orb!!!");
+                }
+
+                if(item == "goose")
+                {
+                    
+                    InputManager.instance.UpdateStory("you have a new pet goose!!!");
+                }
+
+                if(item == "knife")
+                {
+                    
+                    InputManager.instance.UpdateStory("you picked up the knife!!!");
                 }
             }
             

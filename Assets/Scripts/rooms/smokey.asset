@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: smokey
   m_EditorClassIdentifier: 
   roomName: smokey
-  Description: 'i cant see. its so smokey in here, i wonder why.
+  Description: ' i cant see. its so smokey in here, i wonder why.
 
 '
   exits:

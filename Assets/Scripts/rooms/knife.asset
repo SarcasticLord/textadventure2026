@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f40a150e57a6fd44f8b5fd96d0f8ad01, type: 3}
-  m_Name: goose 1
+  m_Name: knife
   m_EditorClassIdentifier: 
-  roomName: goose
-  Description: 'woah look theres about... 1,2,4,5, 7 geese in here!
+  roomName: knife
+  Description: ' ooo a knife. WAIT! this is the knife that TSA took from me at the
+    airport!!!!
 
-    im gonna
-    take one '
+'
   exits:
-  - {fileID: 11400000, guid: eea68afd2376ba34e89f33c08bcd36ed, type: 2}
-  items: []
+  - {fileID: 11400000, guid: da57219c21493fa4b8385fa0b3be0055, type: 2}
+  items:
+  - knife
