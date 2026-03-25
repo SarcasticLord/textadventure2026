@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: goose
   m_EditorClassIdentifier: 
   roomName: goose
-  Description: " woah look theres about... 1,2,4,5, 7 geese in here!\r\n\rim gonna
-    take one\n"
+  Description: 'woah look theres about... 1,2,4,5, 7 geese in here!
+
+    im gonna
+    take one
+
+'
   exits:
   - {fileID: 11400000, guid: eea68afd2376ba34e89f33c08bcd36ed, type: 2}
   items:

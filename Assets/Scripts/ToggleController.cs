@@ -44,6 +44,7 @@ public class ToggleController : MonoBehaviour
             placeHolderText.color = Color.white;
             toggleText.color = Color.white;
             musicText.color = Color.white;
+            InputManager.instance.UpdateStory("Turned on darkmode.");
         }
         else
         {   
@@ -54,6 +55,7 @@ public class ToggleController : MonoBehaviour
             placeHolderText.color = Color.white;
             toggleText.color = Color.black;
             musicText.color = Color.black;
+            InputManager.instance.UpdateStory("MY EYES IT BURNSSSS!!!!");
         }
     }
 

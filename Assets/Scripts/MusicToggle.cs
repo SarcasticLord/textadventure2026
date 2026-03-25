@@ -35,11 +35,13 @@ public class MusicToggle : MonoBehaviour
         {
             toggle.isOn = true; // check the box
             bgmSource.Play();
+            InputManager.instance.UpdateStory("Turned music on.");
         }
         else
         {   
             toggle.isOn = false; // uncheck the box
             bgmSource.Stop();
+            InputManager.instance.UpdateStory("Turned music off.");
         }
     }
 

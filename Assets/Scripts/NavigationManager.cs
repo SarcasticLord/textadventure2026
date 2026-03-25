@@ -36,6 +36,7 @@ public class NavigationManager : MonoBehaviour
     {
         currentRoom = startingRoom;
         Unpack();
+        GameManager.instance.Load();
     }
 
     void Unpack()

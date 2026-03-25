@@ -27,12 +27,12 @@ public class GameManager : MonoBehaviour
     {
         Load();
         NavigationManager.instance.onRestart += ResetGame; // notice no () its not calling it its pointing to it
-        //Save();
+        
         
 
     }
 
-    void Load()
+    public void Load()
     {
         if (File.Exists(Application.persistentDataPath + "/player.save"))
         {
@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
             Room aroom = NavigationManager.instance.GetRoomByName(gameState.currentRoom);
             if (aroom != null)
                 NavigationManager.instance.SwitchRooms(aroom);
+
+            inventory = gameState.inventory;
         }
         //else // new player
         //    NavigationManager.instance.GameRestart();
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
     {
         SaveState gameState = new SaveState();
         gameState.currentRoom = NavigationManager.instance.currentRoom.name;
+        gameState.inventory = inventory;
 
         BinaryFormatter bf = new BinaryFormatter();
         FileStream aFile = File.Create(Application.persistentDataPath + "/player.save");
