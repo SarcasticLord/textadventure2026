@@ -8,6 +8,7 @@ using UnityEngine.Analytics;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    
     public List<string> inventory = new List<string>();
 
     private void Awake()
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
+
+        
     }
     // Start is called before the first frame update
     void Start()

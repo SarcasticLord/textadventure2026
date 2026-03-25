@@ -10,6 +10,7 @@ public class ToggleController : MonoBehaviour
     public TMP_Text inputText; // part of the input field where user enters response
     public TMP_Text placeHolderText; // part of the input field for initial placeholder text'
     public Text toggleText;
+    public Text musicText;
 
     private bool darkmode;
     private Toggle toggle;
@@ -42,15 +43,17 @@ public class ToggleController : MonoBehaviour
             inputText.color = Color.white;
             placeHolderText.color = Color.white;
             toggleText.color = Color.white;
+            musicText.color = Color.white;
         }
         else
         {   
-            toggle.isOn = false; // uncheck the box
+            toggle.isOn = false; // uncheck the box     lightmode
             background.color = Color.white;
             storyText.color = Color.black;
             inputText.color = Color.white;
-            placeHolderText.color = Color.black;
+            placeHolderText.color = Color.white;
             toggleText.color = Color.black;
+            musicText.color = Color.black;
         }
     }
 
