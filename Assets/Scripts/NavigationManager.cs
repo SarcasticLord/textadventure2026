@@ -135,6 +135,12 @@ public class NavigationManager : MonoBehaviour
                     
                     InputManager.instance.UpdateStory("you picked up the knife!!!");
                 }
+
+                if(item == "key")
+                {
+                    
+                    InputManager.instance.UpdateStory("you picked up the key!!!");
+                }
             }
             
         }
