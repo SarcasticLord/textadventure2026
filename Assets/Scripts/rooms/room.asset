@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: room
   m_EditorClassIdentifier: 
   roomName: room
-  Description: ' there is nothing in here
+  Description: 'its too dark to see anything in here
 
 '
   exits:

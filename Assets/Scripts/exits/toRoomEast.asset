@@ -17,5 +17,5 @@ MonoBehaviour:
 
 '
   room: {fileID: 11400000, guid: 01a01e6d563d3f947ba65d8949115d74, type: 2}
-  isLocked: 1
+  isLocked: 0
   isHidden: 0
